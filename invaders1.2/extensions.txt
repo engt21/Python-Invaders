@@ -1,0 +1,62 @@
+Name: Timothy Eng
+Date: December 08, 2017
+
+File: Extensions/Citations.txt
+
+Purpose: Details extensions and citations for CS 1110 Assignment 7, Alien Invaders.
+
+I felt that doing a Star Wars themed game would be appropiate for extensions, since it's in space after all, and also in recognition of
+The Last Jedi coming out in a week or so. 
+
+Extensions:
+
+EXTENSION #1: The whole Star Wars theme. (Large majority of the changes made to the game, took most time to do).
+-Aliens to TIE Fighters
+-Ship to X-Wing
+-Background to Death Star II
+-Added introductory text to set up story (Battle of Endor)
+-Added a timer attribute for introductory text
+
+EXTENSION #2: KEY MODIFIERS/SPEED MODIFIERS:
+
+-IF THE LEFT SHIFT KEY IS HELD DOWN, THE SHIP MOVES AT x2 SPEED.
+-IF THE LEFT CONTROL KEY IS HELD DOWN, THE ALIENS MOVE AT x2 SPEED.
+
+-IF THE TAB KEY IS HELD DOWN, THE BOLTS MOVE AT x2 SPEED.
+
+In addition, I included the classic Space Invaders bug (the difficulty curve), so that every time a fighter dies, they speed up.
+However, to add in the extra "Star Wars Thrill" as I call it, I changed it so that speed instead of being multiplied by 0.97 like suggested
+I made it multiplied by 0.95. Not ridiculously hard but hard enough to make it interesting (of course it can be changed; it's in the last
+line of def _check_Alien_Collision(self).
+
+EXTENSION #3: Sound
+Pretty self explanatory: added sound for when TIE fighter and X-Wing shoot.
+
+EXTENSION #4: 
+Score counter: keeps track of score (called kill count).
+(also lives counter; although not an extension it was not required and I thought it appropiate to put it here).
+
+EXTENSION #5: (? half extension)
+New game: after losing a game, the player can play a new one. 
+
+CITATIONS:
+
+Art:
+After looking at pictures online and from the movies of TIE Fighters, X-Wings, and the Death Star II, I went into Microsoft Paint, created
+a black background, and tried to reproduce it until it seemed to resemble the ship I was trying to copy. This was, perhaps, harder than 
+coding the project itself at times. It took me a couple hours per ship with many different versions, and I only include the final version
+in the Images folder. Luckily, since they all have black backgrounds, I started with that and drew on top instead of filling in around 
+the ships. Of course, this means that when flying over the Death Star background, there is some space where it will cover up the background
+but I didn't want to spend too much time on the art. 
+
+(You may also notice that there is an exploding TIE fighter strip in the Images folder; unfortunately, I did not have time to implement
+it correctly so I just commented it out in my code since the 30 line rule only counts towards actual code, not spaces/comments).
+
+Sound: SEE PICTURE IN INVADERS.ZIP called 'soundbible.png', shows laser cannon and ray gun file with Attribution 3.0.
+The sound files were retrieved from a page on soundbible.com; however, since the actual website is down, I used archive.org to 
+access an old copy of the website. I used the Laser Cannon and Ray Gun sound file, which both have an Attribution 3.0 License, 
+for my sound extension. It took many hours, but I manipulated the sound files with Audacity, using bits from each and changing 
+the pitch, repetition rate, speed, and so forth to create the TIE Fighter sound and X-Wing Sound for shooting. 
+I used the original movies as my guide  (basically I listened to them and tried to manipulate my audacity file as 
+much as I could to make it as similar as possible. It took me about twice as long as creating one of the images for the game 
+for each sound file. 
